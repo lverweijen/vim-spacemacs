@@ -16,6 +16,7 @@ Plugin 'jimmay5469/vim-spacemacs'
 By default this plugin uses whatever leader key you have set up.  If you like Spacemacs and you aren't already using `<SPACE>` as your leader key, then you can set it in your `.vimrc` using the following:
 ```
 let mapleader = "\<SPACE>"
+let maplocalleader = ","
 ```
 
 ## Recommended Plugins ##
@@ -25,12 +26,19 @@ let mapleader = "\<SPACE>"
 " Default configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-commentary'
 Plugin 'szw/vim-maximizer'
+Plugin 'easymotion/vim-easymotion'
+
+" One of these
+" Plugin 'kien/ctrlp.vim'
+" let g:spacemacs_fuzzy = 'ctrlp'
+"
+" Plugin 'Shougo/unite.vim'
+" let g:spacemacs_fuzzy = 'unite'
 
 
 
