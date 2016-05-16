@@ -91,8 +91,12 @@ nnoremap <LEADER>bb :call spacemacs#buffers()<CR>
 " Files
 let g:spacemacs_map.f = {'name': '+files'}
 nnoremap <LEADER><TAB> <C-^>
+nnoremap <LEADER>fD :Remove<CR>
+nnoremap <LEADER>fE :SudoEdit 
+nnoremap <LEADER>fL :Locate 
 nnoremap <LEADER>fr :call spacemacs#recent()<CR>
-nnoremap <LEADER>fs :w<CR>
+nnoremap <LEADER>fR :Rename 
+nnoremap <LEADER>fs :write<CR>
 nnoremap <LEADER>fS :wa<CR>
 nnoremap <LEADER>ft :NERDTreeToggle<CR>
 nnoremap <LEADER>ff :call spacemacs#files()<CR>

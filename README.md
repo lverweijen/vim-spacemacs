@@ -44,6 +44,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'szw/vim-maximizer'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-eunuch'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Layers
