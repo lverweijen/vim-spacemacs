@@ -26,18 +26,24 @@ let maplocalleader = ","
 " Default configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-Plugin 'scrooloose/syntastic'
+" A spacemacs-like menu displaying keybindings (highly recommended)
+Plugin 'hecal3/vim-leader-guide'
+call leaderGuide#register_prefix_descriptions("<Space>", "g:spacemacs_map")
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+nnoremap <silent> <leader> :<c-u>LeaderGuide '<Space>'<CR>
+vnoremap <silent> <leader> :<c-u>LeaderGuideVisual '<Space>'<CR>
+
+" One of these for fuzzy files / buffers
+" Plugin 'kien/ctrlp.vim'
+" Plugin 'Shougo/unite.vim'
+
+" Other plugins
+Plugin 'easymotion/vim-easymotion'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/syntastic'
 Plugin 'szw/vim-maximizer'
-Plugin 'easymotion/vim-easymotion'
-
-" One of these
-Plugin 'kien/ctrlp.vim'
-Plugin 'Shougo/unite.vim'
-
-
+Plugin 'tpope/vim-commentary'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Layers
