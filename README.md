@@ -34,11 +34,8 @@ Plugin 'szw/vim-maximizer'
 Plugin 'easymotion/vim-easymotion'
 
 " One of these
-" Plugin 'kien/ctrlp.vim'
-" let g:spacemacs_fuzzy = 'ctrlp'
-"
-" Plugin 'Shougo/unite.vim'
-" let g:spacemacs_fuzzy = 'unite'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Shougo/unite.vim'
 
 
 

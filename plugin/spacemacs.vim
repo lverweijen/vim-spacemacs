@@ -6,13 +6,6 @@ endif
 let g:loaded_spacemacs=1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Read settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-if !exists('g:spacemacs_fuzzy')
-    let g:spacemacs_fuzzy = ''
-endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 function! spacemacs#toggleExplorerAtRoot()
@@ -26,11 +19,9 @@ function! spacemacs#toggleExplorerAtRoot()
 endfunction
 
 function! spacemacs#buffers()
-  " if g:spacemacs_fuzzy == 'unite'
   if exists('g:loaded_unite')
     exe "Unite -no-split -start-insert buffer"
   elseif exists('g:loaded_ctrlp')
-  " elseif g:spacemacs_fuzzy == 'ctrlp'
     exe "CtrlPBuffer"
   else
     exe "buffers"
